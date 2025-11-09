@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ Accordion</title>
+  <link rel="stylesheet" href="faq.css" />
+  <link rel="icon" href="imgs/favicon-32x32.png">
+</head>
+<body>
+  <main class="faq-container">
+    <section class="faq-card">
+      <div class="faq-header">
+        <img src="imgs/icon-star.svg" alt="Star Icon" class="faq-icon" />
+        <h1>FAQs</h1>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          What is Frontend Mentor, and how will it help me?
+          <img src="imgs/icon-minus.svg" alt="Minus Icon" class="icon minus" />
+          <img src="imgs/icon-minus.svg" alt="Plus Icon" class="icon plus" />
+        </button>
+        <div class="faq-answer">
+          
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building.
+          
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Is Frontend Mentor free?
+          <img src="imgs/icon-plus.svg" alt="Plus Icon" class="icon plus" />
+          <img src="imgs/icon-plus.svg" alt="Minus Icon" class="icon minus" />
+        </button>
+        <div class="faq-answer">
+          <p>Yes! You can access both free and premium challenges on the platform.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Can I use Frontend Mentor projects in my portfolio?
+          <img src="imgs/icon-plus.svg" alt="Plus Icon" class="icon plus" />
+          <img src="imgs/icon-plus.svg" alt="Minus Icon" class="icon minus" />
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely! They're great for showing off your frontend skills.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          How can I get help if I'm stuck on a challenge?
+          <img src="imgs/icon-plus.svg" alt="Plus Icon" class="icon plus" />
+          <img src="imgs/icon-plus.svg" alt="Minus Icon" class="icon minus" />
+        </button>
+        <div class="faq-answer">
+          <p>
+            You can ask questions and get support from the friendly community on
+            the Frontend Mentor Discord server.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ 
+</body>
+ <script>
+    const faqs = document.querySelectorAll('.faq-item');
+
+    faqs.forEach(faq => {
+      const question = faq.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        faq.classList.toggle('active');
+      });
+    });
+  </script>
+</html>
