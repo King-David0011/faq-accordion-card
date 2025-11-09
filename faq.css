@@ -17,7 +17,7 @@ body {
 
 /* FAQ Container */
 .faq-container {
-  background: url('imgs/background-pattern-desktop.svg') no-repeat top center;
+  background: url('background-pattern-desktop.svg') no-repeat top center;
   background-color: hsl(275, 100%, 97%);
   background-size: contain;
   width: 100%;
